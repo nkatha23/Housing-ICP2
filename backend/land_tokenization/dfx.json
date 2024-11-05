@@ -1,0 +1,8 @@
+{
+  "canisters": {
+    "land_registry": {
+      "main": "src/land_registry.mo",
+      "type": "motoko"
+    }
+  }
+}
