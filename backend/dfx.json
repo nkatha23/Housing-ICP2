@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "land_registry": {
+      "main": "src/land_registry.mo",
+      "type": "motoko"
+    },
+    "data_store": {
+      "main": "src/data-store.mo",
+      "type": "motoko"
+    },
+    "properties": {
+      "main": "src/properties.mo",
+      "type": "motoko"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000"
+    },
+    "ic": {
+      "providers": ["https://ic0.app"]
+    }
+  }
+}
