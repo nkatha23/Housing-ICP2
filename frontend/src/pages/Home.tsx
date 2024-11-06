@@ -5,32 +5,35 @@ const Home: React.FC = () => {
   return (
     <div className="w-full h-full">
       {/* Hero Section */}
-      <section
-        className="h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-center text-black relative overflow-hidden"
-        style={{ backgroundImage: "url('/path/to/map-background-image.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-white bg-opacity-80"></div>
-        <div className="relative z-10 max-w-4xl px-8">
-          <h1 className="text-6xl font-extrabold mb-8 leading-tight">Welcome to Ark - A Land Tokenization Platform</h1>
-          <p className="mb-12 text-2xl">
-            Ark is a revolutionary platform that allows you to tokenize and manage your land properties on the blockchain. Seamlessly add, manage, and transfer ownership of properties with transparency and security.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <Link
-              to="/learn-more"
-              className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-10 py-4 rounded-full transition-transform transform hover:scale-110 hover:bg-blue-700 shadow-md"
-            >
-              Learn More
-            </Link>
-            <Link
-              to="/properties"
-              className="bg-white border border-green-500 text-green-500 px-10 py-4 rounded-full transition-transform transform hover:scale-110 hover:bg-green-100 shadow-md"
-            >
-              View Properties
-            </Link>
-          </div>
+          <section
+      className="h-screen w-full bg-cover bg-center flex flex-col justify-center items-center text-center text-black relative overflow-hidden"
+      style={{
+        backgroundImage: "url('/path/to/map-background-image.jpg'), linear-gradient(to right, #6EE7B7, #3B82F6)"
+      }}
+    >
+      <div className="absolute inset-0 bg-white bg-opacity-80"></div>
+      <div className="relative z-10 max-w-4xl px-8">
+        <h1 className="text-6xl font-extrabold mb-8 leading-tight">Welcome to Ark - A Land Tokenization Platform</h1>
+        <p className="mb-12 text-2xl">
+          Ark is a revolutionary platform that allows you to tokenize and manage your land properties on the blockchain. Seamlessly add, manage, and transfer ownership of properties with transparency and security.
+        </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          <Link
+            to="/learn-more"
+            className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-10 py-4 rounded-full transition-transform transform hover:scale-110 hover:bg-blue-700 shadow-md"
+          >
+            Learn More
+          </Link>
+          <Link
+            to="/properties"
+            className="bg-white border border-green-500 text-green-500 px-10 py-4 rounded-full transition-transform transform hover:scale-110 hover:bg-green-100 shadow-md"
+          >
+            View Properties
+          </Link>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* How It Works Section */}
       <section className="relative -mt-32 z-20 mb-20 px-8">
